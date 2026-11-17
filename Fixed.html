@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Validated and accessible home page for the Tech Prophet Mentorship Program.">
+    <title>Tech Prophet Mentorship — Validated HTML Home</title>
+  </head>
+  <body>
+
+    <header>
+      <h1 id="main-header">Tech Prophet Mentorship</h1>
+      <nav aria-label="Primary Navigation">
+        <!-- Fixed relative link path with proper file extension -->
+        <a href="./pages/about.html">About Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Repaired nesting: separated inline paragraphs and block elements -->
+      <p>Welcome to our mentorship program.</p>
+      <div>Explore our track requirements below.</div>
+
+      <!-- Repaired heading hierarchy: logical <h2> following <h1> -->
+      <h2 id="program-highlights-header">Program Highlights</h2>
+
+      <!-- Added meaningful alt text for accessibility -->
+      <img src="assets/images/workspace.jpg" alt="A dual-monitor workstation displaying VS Code and terminal setup logs.">
+
+      <!-- Repaired form structure, explicit label associations, and closed tags -->
+      <form action="/submit" method="post">
+        <p>
+          <label for="applicant-name">Applicant Name:</label><br>
+          <input type="text" id="applicant-name" name="applicant_name" required>
+        </p>
+
+        <p>
+          <label for="user-email">Email Address:</label><br>
+          <input type="email" id="user-email" name="email" required>
+        </p>
+
+        <p>
+          <button type="submit">Apply Now</button>
+        </p>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Tech Prophet Mentorship. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Missing charset, viewport, and title -->
+  </head>
+  <body>
+    <header>
+      <!-- Duplicate ID on heading and broken relative link -->
+      <h3 id="main-header">Tech Prophet Mentorship</h3>
+      <a href="pages/about">About Us</a>
+    </header>
+
+    <main>
+      <!-- Incorrect nesting: <p> wrapping block <div> -->
+      <p>Welcome to our mentorship program.
+        <div>Explore our track requirements below.</div>
+      </p>
+
+      <!-- Incorrect heading hierarchy (h3 following h3 without h2, skipped hierarchy) -->
+      <h4 id="main-header">Program Highlights</h4>
+
+      <!-- Meaningful image missing alt text -->
+      <img src="assets/images/workspace.jpg">
+
+      <!-- Form controls with missing/incorrect label associations and missing closing tags -->
+      <form action="/submit" method="post">
+        <div>
+          <!-- Unlinked label (missing for/id pair) -->
+          <label>Applicant Name</label>
+          <input type="text" name="applicant_name">
+        <!-- Missing </div> closing tag -->
+
+        <div>
+          <!-- Label referencing non-existent ID -->
+          <label for="wrong-email-id">Email Address:</label>
+          <input type="email" id="user-email" name="email">
+        </div>
+
+        <button type="submit">Apply Now
+        <!-- Missing </button> and </form> closing tags -->
+    </main>
+  </body>
+</html>
